@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Haya un formulario con un campo, una caja y un botón. El botón deberá crear el contenido del formulario dentro de la caja. -->
+
+    <form action="#">
+        <!-- fieldset permite organizar en grupos los campos de un formulario -->
+        <fieldset style="width: 500px; background-color: rgb(114, 185, 212); color:white">
+            <!-- <legend>  KATA 11  </legend> -->
+            <label for="textoInicial">Introduce un texto <input id="textoInicial" name="textoInicial" type="text"
+                    required style="margin-left: 10px;"/></label><br>
+            <label for="areaTexto">Mostramos el texto:
+                <textarea id="areaTexto" name="areaTexto" rows="3" cols="30" placeholder="texto..." style=" margin-top: 10px;"></textarea>
+            </label>
+            <!-- el boton hay que ponerle el type button para evitar que actúe como un botón de envío por defecto, lo que prevendrá la recarga de la página. -->
+            <button id="btnEnviar" type="button" onclick="enviarTexto()">Enviar</button>
+        </fieldset>
+    </form>
+
+
+    <script src="kata11.js"></script>
+</body>
+
+</html>

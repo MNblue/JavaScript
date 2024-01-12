@@ -54,7 +54,6 @@ function addHijo(cajaPadre){
 
     cajaPadre.appendChild(cajaHijo);
 
-
 }
 
 
@@ -65,7 +64,6 @@ function deleteCaja(){
     let caja;
     let nodoTexto;
     let cajaPadre;
-
     
     //elminar hijo
     padre = document.getElementById("cuadroPrincipal");
@@ -83,5 +81,4 @@ function deleteCaja(){
         anchuraPadre=parseInt(anchuraPadre)-50;
         cajaPadre.style.width = anchuraPadre+"px";
     }
-    
 }
