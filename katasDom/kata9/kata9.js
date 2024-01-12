@@ -9,7 +9,11 @@ function addCaja(){
     let numeroHijos = 0;
     let alturaPadre;
     let alturaHijos = "0px";
+    let contador;
+    let nodoTexto;
     
+    nodoTexto = document.getElementById("contador");
+    contador = parseInt(nodoTexto.textContent);
 
     cajaPadre = document.getElementById("cuadroPrincipal");
 
@@ -19,15 +23,23 @@ function addCaja(){
     alturaHijos = (50*numeroHijos);
     alturaPadre = cajaPadre.style.height.slice(0,-2);
 
-    if(parseInt(alturaHijos,10) >= parseInt(alturaPadre,10) ){
+    if((parseInt(alturaHijos,10) >= parseInt(alturaPadre,10))&&(contador<5) ){
         //caja padre llena, debemos hacerla mas grande en altura.
         alturaPadre=parseInt(alturaPadre)+50;
         cajaPadre.style.height = alturaPadre+"px";
         //ahora si podemos añadir hijo
         addHijo(cajaPadre);
-    }else{
+        contador ++;
+        nodoTexto.textContent = contador;
+        
+
+    }else if(contador<5){
         //como hay espacio suficiente añadimos el hijo sin mas
         addHijo(cajaPadre);
+        contador++;
+        nodoTexto.textContent = contador;
+    }else{
+        alert("Ya no puedes crear mas cajitas");
     }
 
 }
