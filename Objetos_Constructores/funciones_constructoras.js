@@ -2,10 +2,10 @@
 
 
 function Mascota (nombre, edad, color, patas){
-    this.nombre = "Miki";
-    this.edad = 9;
-    this.color = "gris";
-    this.patas = 4;
+    this.nombre = nombre;
+    this.edad = edad;
+    this.color = color;
+    this.patas = patas;
     this.saludar = function() {
         console.log('¡hola, soy '+this.nombre + '!');
     }

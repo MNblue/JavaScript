@@ -4,10 +4,10 @@
 
 function crearMascota(nombre, edad, color, patas) {
     return {
-        nombre: "Miki",
-        edad: 9,
+        nombre: nombre,
+        edad: edad,
         color: color,
-        patas: 4,
+        patas: patas,
 
         saludar: function () {
             console.log('¡hola, soy ' + this.nombre + '!');

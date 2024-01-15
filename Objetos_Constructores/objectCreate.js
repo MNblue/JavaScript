@@ -1,7 +1,7 @@
 
 let mascotaPrototipo = {
-    nombre : "Miki",
-    edad: 9,
+    nombre : "",
+    edad: 0,
 
     saludar: function() {
         console.log('¡hola, soy '+ this.nombre + '!');
