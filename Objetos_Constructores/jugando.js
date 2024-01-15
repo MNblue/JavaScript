@@ -27,3 +27,9 @@ function ordenarGatitos(gatito, gatito2,gatito3, gatito4, gatito5){
 }
 
 ordenarGatitos(gatito, gatito2, gatito3, gatito4, gatito5);
+
+
+// un array es un objeto
+let cadenita = new Array(3);
+cadenita[0] = "hola";
+console.log(cadenita);
